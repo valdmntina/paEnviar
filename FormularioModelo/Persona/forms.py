@@ -22,5 +22,7 @@ class PersonaForms(forms.ModelForm):
                                                'class': 'forms__control'}),
 
             "correo": forms.EmailField(attrs={'type': 'email',
-                                              'class': 'form__control'})
+                                              'class': 'form__control'}),
+
+            'tipo_documento': forms.Select(attrs={'class': 'form__control'})
         }
