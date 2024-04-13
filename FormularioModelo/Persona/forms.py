@@ -18,6 +18,6 @@ class PersonaForms(forms.ModelForm):
             "nombre": forms.TextInput(attrs={'type': 'text','class': 'forms__control'}),
             "apellido": forms.TextInput(attrs={'type': 'text','class': 'forms__control'}),
             "correo": forms.EmailInput(attrs={'type': 'email','class': 'form__control'}),
-            'tipo_documento': forms.Select(attrs={'class': 'form__control'}),
+            'tipo_documento': forms.Select(attrs={'placeholder': 'Seleccione','class': 'form__control'}),
             # 'imagen': forms.ImageInput
         }
