@@ -28,6 +28,6 @@ def documento(request):
             form.save()
     else:
         form = DocumentoForms()
-    return render (request, 'documento.html', {
+        return render (request, 'documento.html', {
         'form': form
-    })
+        })
