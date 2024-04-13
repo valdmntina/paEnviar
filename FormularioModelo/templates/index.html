@@ -10,9 +10,10 @@
 <body>
     <h2>App persona</h2>
 
-    <form action="{% url 'index' %}" method="post">
+    <form action="{% url 'index' %}" method="post" enctype="multipart/form-data">
         {% csrf_token %}
-        {{ form }}
+        {{ form.label_tag }}
+        {{ form.as_div }}
         <button type="submit">Enviar</button>
     </form>
 </body>
